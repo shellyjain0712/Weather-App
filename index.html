@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="weather-container">
+        <div class="weather-left">
+            <div class="weather-day">Sunday</div>
+            <div class="weather-date">2 Feb 2025</div>
+            <div class="weather-location">
+                <i class="location-icon">📍</i>
+                <span>New York</span>
+            </div>
+            <div class="weather-icon">
+                <img src="cloud.png" alt="Weather Icon">
+            </div>
+            <div class="weather-temp">10°C</div>
+            <div class="weather-desc">Scattered Clouds</div>
+        </div>
+
+        <div class="weather-right">
+            <div class="weather-stats">
+                <div>
+                    <span>💧 HUMIDITY</span>
+                    <span class="humidity">70%</span><br><br>
+                    <span>💨 WIND</span>
+                    <span class="wind">3.66 m/s</span>
+                </div>
+            </div>
+            <div class="forecast">
+                <div class="day-forecast">
+                    <div>Saturday</div>
+                    <div>12°</div>
+                    <img src="cloud.png" alt="Cloudy">
+                </div>
+                <div class="day-forecast">
+                    <div>Sunday</div>
+                    <div>13°</div>
+                    <img src="cloud.png" alt="Cloudy">
+                </div>
+                <div class="day-forecast">
+                    <div>Monday</div>
+                    <div>9°</div>
+                    <img src="cloud.png" alt="Cloudy">
+                </div>
+                <div class="day-forecast">
+                    <div>Tuesday</div>
+                    <div>8°</div>
+                    <img src="cloud.png" alt="Cloudy">
+                </div>
+            </div>
+            <div class="search-bar">
+                <input type="text" id="city" placeholder="Enter city name">
+                <button onclick="getWeather()">Search</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
